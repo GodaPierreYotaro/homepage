@@ -16,6 +16,11 @@ main {
   background-size: contain;
   background-position: center; */
 }
+a {
+  &:disabled {
+    cursor: default;
+  }
+}
 .main-img {
   display: block;
   position: relative;
