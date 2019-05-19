@@ -1,3 +1,5 @@
+@import "utils";
+
 html, body, main {
   width: 100%;
   height: 100%;
@@ -68,6 +70,7 @@ a {
 .btn-portfolio {
   width: 380px;
   height: 100px;
+  margin: 0;
   // background-color: rgba(#ffcc66, 0.5);
   &:after {
     background-image: url("/images/btn_portfolio_color.png")
@@ -98,5 +101,66 @@ a {
 .btn-youtube {
   &:after {
     background-image: url("/images/btn_yt_color.png")
+  }
+}
+
+@include is-sp {
+  .main-img {
+    width: 375px;
+  }
+  .portfolio {
+    transform: translate(0, 470%);
+  }
+  .btns {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-150%, -4%);
+  }
+  .btn {
+    width: 78px;
+    height: 78px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .btn-portfolio {
+    width: 300px;
+    height: 60px;
+    margin: 0;
+    &:after {
+      background-image: url("/images/btn_portfolio_color_sp.png")
+    }
+  }
+  .btn-twitter {
+    height: 72px;
+    &:after {
+      background-image: url("/images/btn_tw_color_sp.png")
+    }
+  }
+  .btn-facebook {
+    height: 72px;
+    &:after {
+      background-image: url("/images/btn_fb_color_sp.png")
+    }
+  }
+  .btn-instagram {
+    &:after {
+      background-image: url("/images/btn_insta_color_sp.png")
+    }
+  }
+  .btn-linkedin {
+  }
+  .btn-note {
+    height: 82px;
+    margin-bottom: 10px;
+    &:after {
+      background-image: url("/images/btn_note_color_sp.png")
+    }
+  }
+  .btn-youtube {
+    &:after {
+      background-image: url("/images/btn_yt_color_sp.png")
+    }
   }
 }

@@ -1,0 +1,13 @@
+$breakpoint: 800px;
+
+@mixin is-sp {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin is-pc {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
