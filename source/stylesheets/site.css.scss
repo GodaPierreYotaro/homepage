@@ -26,10 +26,11 @@ a {
   position: relative;
   /* width: 100%; */
   width: 1024px;
+  pointer-events: none;
 }
 .portfolio {
   position: absolute;
-  transform: translate(0, 150%);
+  transform: translate(0, 155%);
 }
 .btns {
   display: flex;
@@ -66,7 +67,11 @@ a {
 }
 .btn-portfolio {
   width: 380px;
+  height: 100px;
   // background-color: rgba(#ffcc66, 0.5);
+  &:after {
+    background-image: url("/images/btn_portfolio_color.png")
+  }
 }
 .btn-twitter {
   &:after {
