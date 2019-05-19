@@ -2,7 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <!-- <meta name="viewport" content="width=1920px,initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=1920"> -->
+    <title>pierre</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <style>
       html, body, main {
@@ -13,26 +15,40 @@
         background-color: #fff;
       }
       main {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        background-image: url(./pierre.png);
+        /* background-image: url(./pierre.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
+        background-position: center; */
+      }
+      .main-img {
+        display: block;
+        position: relative;
+        /* width: 100%; */
+        width: 1024px;
       }
       .btns {
         display: flex;
         position: absolute;
-        margin-top: 50%;
-        margin-left: 50%;
-        transform: translate(-45%, 180%);
-        background-color: #ffcc66;
+        /* margin-top: 50%; */
+        /* margin-left: 50%; */
+        margin-left: 35px;
+        /* transform: translate(-45%, 180%); */
+        transform: translate(0, 210%);
       }
       .btn {
         display: block;
-        width: 100px;
+        width: 85px;
+        /* width: 10vw; */
         height: 100px;
         margin-right: 10px;
         /* position: absolute; */
+        background-color: #ffcc66;
+        opacity: 0.5;
       }
       .btn-twitter {}
       .btn-facebook {}
@@ -44,13 +60,15 @@
   </head>
   <body>
     <main>
+      <img class="main-img" src="./pierre.png">
+      <!-- <div><img class="main-img" src="./pierre.png"></div> -->
       <div class="btns">
-        <a class="btn btn-twitter" href="https://twitter.com/"></a>
-        <a class="btn btn-facebook" href="https://facebook.com"></a>
-        <a class="btn btn-instagram" href="https://www.instagram.com"></a>
-        <a class="btn btn-linkedin" href="https://jp.linkedin.com/"></a>
-        <a class="btn btn-note" href="https://note.mu/"></a>
-        <a class="btn btn-youtube" href="https://youtube.com"></a>
+        <a class="btn btn-twitter" href="https://twitter.com/" target="_blank"></a>
+        <a class="btn btn-facebook" href="https://facebook.com" target="_blank"></a>
+        <a class="btn btn-instagram" href="https://www.instagram.com" target="_blank"></a>
+        <a class="btn btn-linkedin" href="https://jp.linkedin.com/" target="_blank"></a>
+        <a class="btn btn-note" href="https://note.mu/" target="_blank"></a>
+        <a class="btn btn-youtube" href="https://youtube.com" target="_blank"></a>
       </div>
     </main>
   </body>
