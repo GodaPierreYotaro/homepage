@@ -1,0 +1,8 @@
+= stylesheet_link_tag "portfolio"
+main
+  div.back
+    a.btn.btn-back[href="/"]
+  picture
+    source[media="(max-width: 799px)" srcset="/images/getting_ready_sp.png"]
+    source[media="(min-width: 800px)" srcset="/images/getting_ready.png"]
+    img.main-img[src="/images/getting_ready.png"]

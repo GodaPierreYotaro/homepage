@@ -1,0 +1,30 @@
+@import "utils";
+
+.back {
+  position: absolute;
+  transform: translate(7%, 155%);
+}
+.btn-back {
+  width: 380px;
+  height: 155px;
+  margin: 0;
+  &:after {
+    background-image: url("/images/btn_back_getting_ready.png")
+  }
+}
+@include is-sp {
+  .main-img {
+    width: 330px;
+  }
+  .back {
+    transform: translate(0, 430%);
+  }
+  .btn-back {
+    width: 200px;
+    height: 60px;
+    margin: 0;
+    &:after {
+      background-image: url("/images/btn_back_getting_ready_sp.png")
+    }
+  }
+}
