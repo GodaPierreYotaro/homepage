@@ -22,6 +22,10 @@ main {
   /* width: 100%; */
   width: 1024px;
 }
+.portfolio {
+  position: absolute;
+  transform: translate(0, 150%);
+}
 .btns {
   display: flex;
   position: absolute;
@@ -37,8 +41,11 @@ main {
   height: 100px;
   margin-right: 10px;
   /* position: absolute; */
-  background-color: #ffcc66;
-  opacity: 0.5;
+  // background-color: rgba(#ffcc66, 0.5);
+}
+.btn-portfolio {
+  width: 380px;
+  // background-color: rgba(#ffcc66, 0.5);
 }
 .btn-twitter {}
 .btn-facebook {}
