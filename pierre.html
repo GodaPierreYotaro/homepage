@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <style>
+      html, body, main {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        background-color: #fff;
+      }
+      main {
+        position: relative;
+        background-image: url(./pierre.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .btns {
+        display: flex;
+        position: absolute;
+        margin-top: 50%;
+        margin-left: 50%;
+        transform: translate(-45%, 180%);
+        background-color: #ffcc66;
+      }
+      .btn {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        /* position: absolute; */
+      }
+      .btn-twitter {}
+      .btn-facebook {}
+      .btn-instagram {}
+      .btn-linkedin {}
+      .btn-note {}
+      .btn-youtube {}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="btns">
+        <a class="btn btn-twitter" href="https://twitter.com/"></a>
+        <a class="btn btn-facebook" href="https://facebook.com"></a>
+        <a class="btn btn-instagram" href="https://www.instagram.com"></a>
+        <a class="btn btn-linkedin" href="https://jp.linkedin.com/"></a>
+        <a class="btn btn-note" href="https://note.mu/"></a>
+        <a class="btn btn-youtube" href="https://youtube.com"></a>
+      </div>
+    </main>
+  </body>
+</html>
