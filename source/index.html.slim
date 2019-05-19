@@ -8,4 +8,7 @@ main
     a.btn.btn-linkedin[disabled=true href="#"]
     a.btn.btn-note[href="https://note.mu/" target="_blank"]
     a.btn.btn-youtube[href="https://youtube.com" target="_blank"]
-  img.main-img[src="./images/main.png"]
+  picture
+    source[media="(max-width: 799px)" srcset="/images/main_sp.png"]
+    source[media="(min-width: 800px)" srcset="/images/main.png"]
+    img.main-img[src="/images/main.png"]
